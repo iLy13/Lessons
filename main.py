@@ -28,7 +28,7 @@ class Example(QWidget):
         self.update()
 
     def draw(self):
-        krug = randint(1, 400)
+        krug = randint(1, 350)
         self.qp.drawEllipse(randint(0, 700), randint(30, 700), krug, krug)
 
 
