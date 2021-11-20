@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QWidget, QApplication
 from ui_file import Ui_Form
 
 
-class Example(QWidget. Ui_Form):
+class Example(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
