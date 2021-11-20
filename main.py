@@ -3,16 +3,15 @@ from random import randint
 from PyQt5 import uic
 from PyQt5.QtGui import QPainter, QColor
 from PyQt5.QtWidgets import QWidget, QApplication
+from ui_file import Ui_Form
 
 
-class Example(QWidget):
+class Example(QWidget. Ui_Form):
     def __init__(self):
         super().__init__()
-        uic.loadUi('UI.ui', self)
+        self.setupUi(self)
         self.initUI()
         self.flag = False
-
-    def initUI(self):
         self.pushButton.clicked.connect(self.drawf)
 
     def paintEvent(self, event):
