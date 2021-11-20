@@ -19,7 +19,7 @@ class Example(QWidget):
         if self.flag:
             self.qp = QPainter()
             self.qp.begin(self)
-            self.qp.setBrush(QColor(255, 255, 0))
+            self.qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
             self.draw()
             self.qp.end()
 
